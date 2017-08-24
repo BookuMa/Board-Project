@@ -18,6 +18,7 @@
 		</form:form>
 	</div>
 	<hr>
+	<div id="article-list">
 	<h3>記事一覧</h3>
 	<c:forEach var="article" items="${aaa}">
 		投稿ID：<c:out value="${article.}"/><br>
@@ -39,5 +40,6 @@
 			</form:form>
 		</c:forEach>
 	</c:forEach>
+	</div>
 </body>
 </html>
