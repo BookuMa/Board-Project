@@ -33,7 +33,7 @@ public class CommentRepository {
 	 * 
 	 * @return　全コメント
 	 */
-	public List<Comment> findAll() {
+	public List<Comment> findAllComment() {
 		String sql = "SELECT id, name, content, article_id from comments ORDER BY id;";
 		List<Comment> commentList = template.query(sql, commentRowMapper);
 		return commentList;

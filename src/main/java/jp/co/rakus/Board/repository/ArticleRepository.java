@@ -31,7 +31,7 @@ public class ArticleRepository {
 	 * 
 	 * @return 全記事
 	 */
-	public List<Article> findAll() {
+	public List<Article> findAllArticle() {
 		String sql = "SELECT id, name, content from articles ORDER BY id;";
 		List<Article> articleList = template.query(sql, articleRowMapper);
 		return articleList;
